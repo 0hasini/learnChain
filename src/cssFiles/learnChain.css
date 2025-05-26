@@ -1,0 +1,10 @@
+.gradient-text {
+    background: linear-gradient(to bottom, #60A5FA, #1D4ED8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}

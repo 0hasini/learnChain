@@ -1,0 +1,87 @@
+.gradient-text-2 {
+    background: linear-gradient(to bottom, #60A5FA, #1D4ED8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    padding-right: 6px;
+}
+
+.welcome-text {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    margin-bottom: 8px;
+    width: 70%;
+}
+
+.h1-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.other-text{
+    background: linear-gradient(to bottom, #111827, #7B8089);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(17, 24, 39, 0.9);
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.welcome-container h1,
+.welcome-container p {
+    margin: 0;
+}
+
+.buttons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#btn-1 {
+    background: linear-gradient(to bottom, #60A5FA, #1D4ED8);
+    color: #F9FAFB;
+    width: 135px;
+    height: 32px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 11px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px
+}
+
+#btn-2 {
+    background: #111827;
+    color: #F9FAFB;
+    width: 120px;
+    height: 32px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
