@@ -7,8 +7,8 @@
     background-color: white;
     z-index: 1000;
     border-bottom: 1px solid #e5e7eb;
-    padding:  150px;
     display: flex;
+    padding: 0 9vw;
     justify-content: space-between;
     align-items: center;
 }
@@ -23,7 +23,7 @@
     background: linear-gradient(to bottom, #60A5FA, #1D4ED8);
     color: white;
     width: 90px;
-    height: 32px;
+    height: 36px;
     display: inline-block;
     font-family: "Inter", sans-serif;
     font-size: 14px;
@@ -33,7 +33,7 @@
     border-radius: 8px;
     cursor: pointer;
 }
-    .login-button {
+.login-button {
     background-color: #111827;
     color: white;
     font-size: 14px;

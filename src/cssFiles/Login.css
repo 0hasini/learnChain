@@ -1,0 +1,90 @@
+.container{
+    width: 350px;
+    height: 350px;
+    background-color: #1118270D;
+    border-radius: 16px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    height: 50vh;
+    font-family: "Inter", sans-serif;
+}
+
+.welcome-wrapper{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 45px;
+}
+.welcome{
+    color: #010309;
+}
+
+.login-msg{
+    color: #111827B7;
+    font-weight: 510;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;    
+}
+
+.learnChain{
+    background: linear-gradient(to bottom, #60A5FA, #1D4ED8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+.welcome-wrapper, .login-msg{
+    margin: 0;
+}
+
+.inputs{
+    padding-left: 45px;
+    margin-top: 40px;
+}
+
+#hd1, #hd2{
+    color: #010309;
+    font-size: 12px;
+}
+
+#eml, #pass{
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(17, 24, 39, 0.05);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+    
+}
+
+.loginn-btn{
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, rgb(96, 165, 250), rgb(29, 78, 216));
+    margin-left: 45px;
+    width: 255px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+}
+
+.eye-icon{
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+  }
+  

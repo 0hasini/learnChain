@@ -6,7 +6,7 @@ export function Footer() {
             <div className="footer-container">
                 <div className="footer-left">
                     <div className="learn-Chain">learnChain</div>
-                    <div className="sub-text">IIITV learning on the chain.</div>
+                    <div className="sub-text">IIITV learning, on the chain.</div>
                 </div>
 
                 <div className="footer-center">

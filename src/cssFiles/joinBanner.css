@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.joinNow{
+    width: 80vw;
+    height: 250px;
+    background: linear-gradient(to bottom, #60A5FA, #1D4ED8);
+    border-radius: 16px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 60px;
+    margin-left: 9vw;
+    
+}
+
+.text-container{
+    padding-top: 30px;
+    padding-left: 25px;   
+}
+
+.heading{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.sub-heading{
+    color: #E5E7EB;
+    font-size: 14px;
+}
+
+.heading, .sub-heading{
+    margin: 0
+}
+
+.btns{
+    margin-top: 12px;
+}
+
+#login-btn {
+    background-color: #111827;
+    color: #F9FAFB;
+    width: 85px;
+    height: 32px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 11px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px
+}
+
+#join-btn{
+    background-color: #F3F4F6;
+    color: #111827;
+    width: 100px;
+    height: 32px;
+    display: inline-block;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 11px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-right: 10px
+}

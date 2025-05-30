@@ -1,4 +1,5 @@
 import '../cssFiles/welcome.css'
+import {Link} from "react-router-dom"
 
 export function Welcome() {
     return(
@@ -11,8 +12,12 @@ export function Welcome() {
             </div>
             <p>Blockchain-powered learning rewards for IIITV students.</p>
             <div className='buttons'>
-                <button id="btn-1">Explore Leaderboard</button>
-                <button id="btn-2">Explore Rewards</button>
+                <Link to="/leaderboard">
+                    <button id="btn-1">Explore Leaderboard</button>
+                </Link>
+                <Link to="/">
+                    <button id="btn-2">Explore Rewards</button>
+                </Link>
             </div>
         </div>
     )

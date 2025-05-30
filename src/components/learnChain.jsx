@@ -1,6 +1,9 @@
 import '../cssFiles/learnChain.css'
+import { Link } from "react-router-dom"
 export function LearnChain() {
     return (
-        <span className="gradient-text">learnChain</span>
+        <Link to="/">
+            <span className="gradient-text">learnChain</span>
+        </Link>
     )
 }

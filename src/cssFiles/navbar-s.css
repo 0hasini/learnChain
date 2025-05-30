@@ -1,0 +1,114 @@
+.navbar-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: white;
+    z-index: 1000;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    padding: 0 9vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-buttons{
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#home{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: #3B82F6;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.04em;
+}
+
+#assignments{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: #3B82F6;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.04em;
+}
+
+#questions{
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: #3B82F6;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.04em;
+}
+
+#logout{
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3B82F6;
+    background-color: white;
+    font-family: "Inter";
+}
+
+.nav-btn {
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    color: #3B82F6;
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    padding: 6px 18px;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s;
+    background: none;
+}
+
+.nav-btn-underline {
+    border-bottom: 3px solid #3B82F6;
+    background: none !important;
+    color: #3B82F6 !important;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.dashboard-card {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f0f9ff 100%);
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.dashboard-card:hover {
+    background: linear-gradient(135deg, #60A5FA 0%, #1D4ED8 100%);
+    color: white;
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.18);
+}
+.dashboard-card.font-extrabold.text-2xl {
+    font-size: 2rem;
+    font-weight: 800;
+    min-height: 110px;
+}
