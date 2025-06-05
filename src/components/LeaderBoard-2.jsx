@@ -83,7 +83,7 @@ export const LeaderBoard2 = () => {
           <div className="col-span-7">Username</div>
           <div className="col-span-3 text-right">Tokens</div>
         </div>
-        <div className="max-h-[250px] overflow-y-auto">
+        <div className="max-h-[140px] overflow-y-auto">
           {others.map((p) => (
             <div 
               key={p.rank} 

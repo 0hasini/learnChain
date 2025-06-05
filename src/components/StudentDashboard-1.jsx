@@ -44,10 +44,10 @@ export function StudentDashboard() {
                 </div>
               </div>
             </div>
-            {/* <div className="w-[330px] mb-2">
+            <div className="w-[330px] mb-2">
               <p className="text-lg font-semibold text-gray-800 mb-5">Here's what you can do today:</p>
             </div>
-            <DashboardComponent /> */}
+            <DashboardComponent />
           </div>
           
           

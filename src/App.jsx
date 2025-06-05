@@ -7,6 +7,8 @@ import { Login } from "./components/Login";
 import { JoinNow } from "./components/JoinNow";
 import { LeaderBoard } from "./components/LeaderBoard";
 import { StudentDashboard } from "./components/StudentDashboard-1";
+import { StudentDashboard2 } from "./components/StudentDashboard-2";
+import { StudentDashboard3 } from "./components/StudentDashboard-3";
 import "./App.css";
 
 function Home() {
@@ -29,7 +31,9 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/join" element={<JoinNow />} />
           <Route path="/leaderboard" element={<LeaderBoard />} />
-          <Route path="/studentdashboard" element={<StudentDashboard/>}/>
+          <Route path="/studentdashboard/home" element={<StudentDashboard/>}/>
+          <Route path="/studentdashboard/assignments" element={<StudentDashboard2/>}/>
+          <Route path="/studentdashboard/questions" element={<StudentDashboard3/>}/>
         </Routes>
       </BrowserRouter>
     </div>

@@ -22,6 +22,9 @@ export function NavbarS(){
     }, []);
 
     const getButtonClass = (path) => {
+        if (path === "/studentdashboard") {
+            return "nav-btn nav-btn-underline";
+        }
         return location.pathname.includes(path)
             ? "nav-btn nav-btn-underline"
             : "nav-btn";
