@@ -49,8 +49,8 @@ export function JoinNow() {
             </div>
 
             <div id="form-username">
-                <div>Username</div>
-                <input type="text" placeholder="Username"></input>
+                <div>Student ID</div>
+                <input type="text" placeholder="Student ID"></input>
             </div>
 
             <div id="form-password">

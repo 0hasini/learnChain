@@ -1,11 +1,11 @@
-const UserModel = require("../models/userModel")
-const jwt = require('jsonwebtoken');
-const JWT_USER_PASSWORD = require("../../config.js");
+import { UserModel } from "../models/userModel.js";
+import jwt from 'jsonwebtoken';
+import { JWT_USER_SECRET } from "../config.js";
 
 function userMiddleware(req, res, next){
     const token = req.headers.authorization;
     try{
-        const verifiedInfo = jwt.verify(token, JWT_USER_PASSWORD);
+        const verifiedInfo = jwt.verify(token, JWT_USER_SECRET);
         req.id = verifiedInfo.id;
         next();
     }catch(err){
@@ -15,6 +15,6 @@ function userMiddleware(req, res, next){
     }
 }
 
-module.exports = {
+export {
     userMiddleware
-}
+};

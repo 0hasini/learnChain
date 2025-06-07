@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.ObjectId;
 
@@ -27,8 +27,8 @@ const AssignmentModel = mongoose.model('Assignment', assignmentSchema);
 const SubmissionModel = mongoose.model('Submission', submissionSchema);
 const ReviewModel = mongoose.model('Review', reviewSchema);
 
-module.exports= {
+export {
     AssignmentModel,
     SubmissionModel,
     ReviewModel
-}
+};
