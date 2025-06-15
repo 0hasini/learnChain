@@ -1,7 +1,6 @@
 import { LearnChain } from "./learnChain"
 import { useState, useRef, useEffect } from "react";
 import boyImage from '../assets/boy.png';
-import "../cssFiles/navbar-s.css"
 import { useLocation, useNavigate } from "react-router-dom";
 
 export function NavbarS(){
@@ -22,18 +21,19 @@ export function NavbarS(){
     }, []);
 
     const getButtonClass = (path) => {
+        const baseClass = "border-none cursor-pointer text-xl font-semibold text-blue-500 bg-white font-inter tracking-tight px-4.5 py-1.5 rounded-xl transition-colors duration-200 bg-none";
         if (path === "/studentdashboard") {
-            return "nav-btn nav-btn-underline";
+            return `${baseClass} border-b-3 border-blue-500 bg-none text-blue-500 rounded-none shadow-none`;
         }
         return location.pathname.includes(path)
-            ? "nav-btn nav-btn-underline"
-            : "nav-btn";
+            ? `${baseClass} border-b-3 border-blue-500 bg-none text-blue-500 rounded-none shadow-none`
+            : baseClass;
     };
 
     return(
-        <div className="navbar-parent">
+        <div className="fixed top-0 left-0 right-0 h-15 bg-white z-50 border-b border-gray-200 flex px-9vw justify-between items-center">
             <LearnChain/>
-            <div className="dashboard-buttons font-mono text-lg">
+            <div className="w-112.5 flex justify-between font-mono text-lg">
                 <button id="home" className={getButtonClass("/studentdashboard")} onClick={() => navigate("/studentdashboard")}>Home</button>
                 <button id="assignments" className={getButtonClass("/assignments")} onClick={() => navigate("/assignments")}>Assignments</button>
                 <button id="questions" className={getButtonClass("/questions")} onClick={() => navigate("/questions")}>Questions</button>

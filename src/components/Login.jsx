@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Navbar } from "./navbar";
-import "../cssFiles/Login.css";
 
 export function Login() {
   const [showPassword, setShowPassword] = useState(false);
@@ -55,44 +54,32 @@ export function Login() {
   };
 
   return (
-    <div className="wrapper">
+    <div className="flex justify-center mt-37.5 h-50vh font-inter">
       <Navbar />
-      <div className="container">
-        <div className="welcome-wrapper">
-          <span className="welcome">Welcome to </span>
-          <span className="learnChain">learnChain</span>
+      <div className="w-87.5 h-87.5 bg-gray-900/5 rounded-2xl">
+        <div className="pt-7.5 pb-1.25 text-2xl font-semibold pl-11">
+          <span className="text-gray-900">Welcome to </span>
+          <span className="bg-gradient-to-b from-blue-400 to-blue-700 bg-clip-text text-transparent inline-block font-inter text-2xl font-bold tracking-tight">learnChain</span>
         </div>
 
-        <div className="login-msg">Log in to access your account!</div>
+        <div className="text-gray-900/70 font-medium text-sm flex justify-center">Log in to access your account!</div>
 
-        {error && <div className="error-message">{error}</div>}
-
-        <form onSubmit={handleLogin} className="inputs">
+        <div className="inputs">
           <div className="email">
             <div id="hd1">Email</div>
-            <input
-              type="email"
-              placeholder="name@email.com"
-              id="eml"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
+            <input type="text" placeholder="name@email.com" id="eml" />
           </div>
 
-          <div className="password">
-            <div id="hd2">Password</div>
-            <div className="password-wrapper">
+          <div className="mb-5">
+            <div className="text-gray-900 text-xs">Password</div>
+            <div className="relative">
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder=" ......"
                 id="pass"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
               />
               <span
-                className="eye-icon"
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 cursor-pointer"
                 onClick={togglePassword}
                 role="button"
                 aria-label="Toggle password visibility"
@@ -102,14 +89,7 @@ export function Login() {
             </div>
           </div>
 
-          <button 
-            type="submit" 
-            className="loginn-btn"
-            disabled={loading}
-          >
-            {loading ? "Logging in..." : "Login"}
-          </button>
-        </form>
+        <button className="loginn-btn">Login</button>
       </div>
     </div>
   );
